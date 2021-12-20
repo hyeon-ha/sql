@@ -4,7 +4,7 @@ import pandas as pd
 if __name__ == '__main__':
     my_db = pymysql.connect(
         user='root',
-        passwd='your password',   #자신의 비번 입력
+        passwd='789632',   #자신의 비번 입력
         host='127.0.0.1',
         port=3306,
         db='shopdb',
