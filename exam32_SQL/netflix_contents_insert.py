@@ -26,7 +26,7 @@ df.fillna('', inplace=True)
 for i in range(len(df)):
     for j in range(12):
         if j !=7:
-            df.iloc[i, j] = df.iloc[i, j].replace('"', '\\\"')
+            df.iloc[i, j] = df.iloc[i, j].replace('"', '\\\"')  ##sql에 \" 라 보내기 위해
             df.iloc[i, j] = df.iloc[i, j].replace("'", "\\\'")
 
 
