@@ -5,6 +5,7 @@ from tensorflow.keras.callbacks import EarlyStopping
 import matplotlib.pyplot as plt
 import tensorflow as tf
 gpus = tf.config.experimental.list_physical_devices('GPU')
+ ###  # 텐서플로가 첫 번째 GPU만 사용하도록 제한
 if gpus:
   # Restrict TensorFlow to only allocate 1GB of memory on the first GPU
   try:
